@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %} CMU Tennis Club: Home {% endblock %}
+
+{%block content_block %}
+<div id="Welcometext" class="container clearfix mb-20">
+  <br><br><br><br><br>
+  <h1 align="center"><span>Welcome to CMU Club Tennis!</span></h1> 
+</div>
+
+<div class="container clearfix mb-20">
+  <div class="c12 row">
+    <p> <img src="{%static "images/2014_TOC_sectionals/team.jpg"%}" height="400px"> </p>
+    <p class="welcome-text">
+      We talk with our rackets. We play with our hearts. </p>
+  </div>  
+  
+  <div class="row">
+    <div class="c4">
+      <h2><span>Who we are</span></h2>
+      <p>We are a team of highly enthusiastic tennis players at Carnegie Mellon University. We hold regular practices and represent CMU at various competitive events.</p>
+    </div>
+    <div class="c4">
+      <h2><span></span></h2>
+      <img src="{%static "images/cmu-mascot.jpg"%}" width="220px" alt= ""/>
+      <br>
+      <img src="{%static "images/2012_TOC_logo.jpg"%}" width="220px" alt=""/>
+    </div>
+    <div class="c4">
+      <h2><span>Latest news</span></h2>
+      <p> Play in the <a href = "{%static "images/tennisOpen.pdf"%}"> CMU Tennis Open</a> on March 28-29 for fun, fame and prizes! Don't forget to register <a href = "https://docs.google.com/forms/d/1KFC4TRhcxSQq7vlYBSEYZNz9K-iudw9UpQNB0CaJBHE/viewform">here</a>. </p>
+    </div>
+  </div>
+</div><!-- /.container -->
+<div class="push"></div>
+</div>
+
+{% endblock %}
