@@ -1,3 +1,0 @@
-{% extends 'base.html' %}
-{% load staticfiles %}
-{% block title %} CMU Tennis Club: Home {% endblock %}
