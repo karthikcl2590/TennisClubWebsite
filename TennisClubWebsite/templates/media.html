@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %} CMU Tennis Club: About {% endblock %}
+
+{%block menu_media %}<li><a href="/media" class="active">Media</a></li>{% endblock %}
+
+    <!-- Contant -->
+{%block content_block %}
+    <div class="container clearfix mt-100 mb-20">
+      <h2><span>Photos </span></h2>
+      <div class="c4 portfolio-thumb">
+	<a class="fancybox" data-fancybox-group="gallery" rel="group" href="{%static "images/cmupractice.jpg"%}" title="Practice at the CMU courts (2013)"><img src="{%static "images/cmupractice.jpg"%}" alt="" /></a>
+      </div>
+      <div class="c4 portfolio-thumb">
+        <a class="fancybox" data-fancybox-group="gallery" rel="group" href="{%static "images/girls.jpg"%}" title="Girl Power at the Tennis on Campus Sectionals! (2013)"><img src="{%static "images/girls.jpg"%}" alt="" /></a>
+      </div>
+      <div class="c4 portfolio-thumb">
+        <a class="fancybox" data-fancybox-group="gallery" rel="group" href="{%static "images/lehigh_team.jpg"%}" title="CMU's first appearance at USTA Tenis on Campus! (2013)"><img src="{%static "images/lehigh_team.jpg"%}" alt="" /></a>
+      </div>
+      <div class="c4 portfolio-thumb">
+        <a class="fancybox" data-fancybox-group="gallery" rel="group" href="{%static "images/lehigh_karthik.jpg"%}" title="Karthik Lakshmanan serves at the TOC Sectionals (2013)"><img src="{%static "images/lehigh_karthik.jpg"%}" alt="" /></a>
+      </div>
+      <div class="c4 portfolio-thumb">
+        <a class="fancybox" data-fancybox-group="gallery" rel="group" href="{%static "images/ChrisEliPittScrimmage.jpg"%}" title="Chris Park and Elias Zauner powering through their doubles game (2013)"><img src="{%static "images/ChrisEliPittScrimmage.jpg"%}" alt="" /></a>
+      </div>
+      <div class="c4 portfolio-thumb">
+	<a class="fancybox" data-fancybox-group="gallery" rel="group" href="{%static "images/dinner.jpg"%}" title="End of Semester dinner at The Porch (2013)"><img src="{%static "images/dinner.jpg"%}" alt="" /></a>
+      </div>
+      <div class="c4 portfolio-thumb">
+        <a class="fancybox" data-fancybox-group="gallery" rel="group" href="{%static "images/scrimmage.jpg"%}" title="At the U Pitt invitational tournament (2014)"><img src="{%static "images/scrimmage.jpg"%}" alt="" /></a>
+      </div>
+      <div class="c4 portfolio-thumb">
+        <a class="fancybox" data-fancybox-group="gallery" rel="group" href="{%static "images/chris_tweener.jpg"%}" title="Chris Park attempting a tweener at practice! (2014)"><img src="{%static "images/chris_tweener.jpg"%}" alt=""/></a>
+      </div>
+       <div class="c4 portfolio-thumb">
+         <a class="fancybox" data-fancybox-group="gallery" rel="group" href="{%static "images/icecream.jpg"%}" title="Ice Cream at ColdStone! (2014)"><img src="{%static "images/icecream.jpg"%}" alt="" /></a>
+      </div>
+    </div><!-- /.container -->
+    <div class="push"></div>
+  </div>
+ {% endblock %}  
