@@ -19,11 +19,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '#)v+3_i1h99flsrds&p#bq@%522mquu81ok$)8%43yqmwri%gw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cmuclubtennis.pythonanywhere.com']
+
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
