@@ -1,0 +1,51 @@
+<!--
+<body>
+    <h1>Practice Information Form</h1>
+
+    <form action="." name="practiceinfo" method="post" >
+    {% csrf_token %}
+
+        <label>
+            <div>First Preference</div> <input type="text" name="prefOne" id="prefOne" value="{{prefOne}}">
+        </label>
+        <label>
+            <div>Second Preference</div> <input type="text" name="prefTwo" id="prefTwo" value="{{prefTwo}}">
+        </label>
+        <label>
+            <div>Third Preference</div> <input type="text" name="prefThree" id="prefThree" value="{{prefThree}}">
+        </label>
+
+        <div class="error">{{error}}</div>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+-->
+
+
+
+<select>
+{% for choice in form.prefOne.field.choices %}
+    <option>{{choice.1}}</option>
+{% endfor %}
+</select>
+
+
+
+
+
+
+<!--
+
+<ul>
+{% for choice in form.prefOne.field.choices %}
+  <li>
+    <input type="radio" name="prefOne" value="{{choice.0}}"
+      {% ifequal form.prefOne.data choice.0 %} 
+         checked="checked"
+      {% endifequal %}/>
+    <label for="">{{choice.1}}</label>
+  </li>
+{% endfor %}
+</ul>
+-->
