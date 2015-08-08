@@ -1,4 +1,4 @@
-B"""
+"""
 Django settings for TennisClubWebsite project.
 
 For more information on this file, see
@@ -19,9 +19,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '#)v+3_i1h99flsrds&p#bq@%522mquu81ok$)8%43yqmwri%gw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = ['cmuclubtennis.pythonanywhere.com']
 
@@ -30,7 +30,8 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'templates').replace('\\', '/'),
-    os.path.join(PROJECT_ROOT, '../ladder/templates').replace('\\', '/')
+    os.path.join(PROJECT_ROOT, '../ladder/templates').replace('\\', '/'),
+    os.path.join(PROJECT_ROOT, '../polls/templates').replace('\\', '/')
     )
 
 STATICFILES_DIRS = (
@@ -52,7 +53,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    #'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
